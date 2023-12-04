@@ -13,12 +13,12 @@ A game designer's role is to create an engaging experience for players, retain t
 
 <GridContainer numColumns="2">
   <figure>
-    <iframe width="432" height="243" src="https://www.youtube-nocookie.com/embed/L6_HXinYTt0?si=N2nIj9L5wy9C0lBF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <figcaption>Sketch Series: Monetization Metrics</figcaption>
+    <iframe width="432" height="243" src="https://www.youtube-nocookie.com/embed/kumeLD2TtRM?si=2nsTV0pia-HxwBPa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <figcaption>Sketch Series: Subscription Design</figcaption>
   </figure>
   <figure>
-  <iframe width="432" height="243" src="https://www.youtube-nocookie.com/embed/LpAU6TheAZ4?si=_1r_ZtlJ3WsrZMUf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <figcaption>Sketch Series: Retention Metrics</figcaption>
+  <iframe width="432" height="243" src="https://www.youtube-nocookie.com/embed/L6_HXinYTt0?si=N2nIj9L5wy9C0lBF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <figcaption>Sketch Series: Monetization Metrics</figcaption>
   </figure>
 </GridContainer>
 
@@ -27,12 +27,12 @@ A game designer's role is to create an engaging experience for players, retain t
 <GridContainer numColumns="2">
 
   <figure>
-    <iframe width="432" height="243" src="https://www.youtube-nocookie.com/embed/N2l0BDgSNtQ?si=nSd4PCd8ta_tIC-n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <figcaption>Sketch Series: Engagement Metrics</figcaption>
+      <iframe width="432" height="243" src="https://www.youtube-nocookie.com/embed/LpAU6TheAZ4?si=_1r_ZtlJ3WsrZMUf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <figcaption>Sketch Series: Retention Metrics</figcaption>
   </figure>
   <figure>
-    <iframe width="432" height="243" src="https://www.youtube-nocookie.com/embed/Q4Cec876KLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <figcaption>Sketch Series: Studio Prototyping</figcaption>
+    <iframe width="432" height="243" src="https://www.youtube-nocookie.com/embed/N2l0BDgSNtQ?si=nSd4PCd8ta_tIC-n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <figcaption>Sketch Series: Engagement Metrics</figcaption>
   </figure>
 </GridContainer>
 
@@ -52,11 +52,13 @@ A game designer's role is to create an engaging experience for players, retain t
 
 - [Monetization Foundations:](../../production/game-design/monetization-foundations.md) Learn monetization best practices and shop design to maximize your experience's monetary growth potential.
 - [Season Pass Design:](../../production/game-design/season-pass-design.md) Learn how to design season passes for your experiences to deliver new content, promote player retention, and generate revenue.
+- [Subscription Design:](../../production/game-design/subscription-design.md) Learn how to design recurring purchases that your players look forward to each month.
 - [Contextual Purchases:](../../production/game-design/contextual-purchases.md) Learn how to design compelling and unintrusive purchase opportunities that occur outside an experience's shop.
 - [Balancing Virtual Economies:](../../production/game-design/balancing-virtual-economies.md) Learn best practices to balance virtual economies when introducing new events.
 
 ## Support Your Experience
 
 - [LiveOps Essentials:](../../production/game-design/liveops-essentials.md) Learn how to design content that keeps players coming back and enjoying your experience after launch.
+- [LiveOps Planning:](../../production/game-design/liveops-essentials.md) Learn how to maintain a dynamic and captivating experience through interweaving the release of two types of content.
 - [Analytics Essentials:](../../production/game-design/analytics-essentials.md) Learn how to leverage key performance indicators (KPIs) to identify the health of your experience and potential growth opportunities.
 - [Content Updates:](../../production/game-design/content-updates.md) Learn how to design content cadences to keep players engaged between larger experience updates.

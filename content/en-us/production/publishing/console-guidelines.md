@@ -15,7 +15,7 @@ Console experiences receive commands from users through input controllers, which
 
 ### Simplifying UI
 
-<img src="../../assets/console/ui-navigation.png" width="70%" />
+<img src="../../assets/publishing/console/UI-Navigation.png" width="70%" />
 
 Apply the following to simplify the UI design for consoles:
 
@@ -24,6 +24,8 @@ Apply the following to simplify the UI design for consoles:
 - **Default controller navigation**: Though users can access UI menus by activating the virtual cursor, since not all users are familiar with the process, you need to support controller navigation of your UI as the default option instead of requiring users to activate the virtual cursor.
 
 - **Minimal controller input complexity**: Unlike tappable or clickable input methods, console users navigate by pressing one button at a time, so an action that takes one move on other devices might take extra moves with a controller. Make sure that key actions in your experience only take a few moves to access.
+
+- **No Chat Window**: Regardless of whether you use the default in-experience text chat system or fork the legacy chat system as your custom chat system, [disable the chat window](../../chat/customizing-in-experience-text-chat.md#chat-window-configuration) for console experiences.
 
 <Alert severity="info">
 As controllers aren't just for consoles and VR but also are available on devices such as desktop and mobile, minimizing the number of moves needed can enhance the UI for all devices and input types in addition to PlayStation and Xbox.
@@ -35,14 +37,14 @@ Unlike mobiles and desktops, navigation is always sequential on consoles, so use
 
 ### Accommodating Dynamic Button Icons
 
-<img src="../../assets/console/buttons.png" width="50%" />
+<img src="../../assets/publishing/console/Buttons.png" width="50%" />
 
 As your experience expands to more platforms, be sure to show button icons that match different devices. `Class.UserInputService` has two methods available that can achieve this:
 
 - `Class.UserInputService:GetStringForKeyCode()` can convert the US query key codes to console keyboard layouts. It's helpful for showing your custom assets as button icons to match the look and feel of your experience. The following example shows how you can map custom assets for `Enum.KeyCode.ButtonA`:
 
   ```lua title="Mapping Custom Assets"
-  local userInputService = game.UserInputService
+  local UserInputService = game:GetService("UserInputService")
   local imageLabel = script.Parent
   local key = Enum.KeyCode.ButtonA
 
@@ -51,7 +53,7 @@ As your experience expands to more platforms, be sure to show button icons that 
       ButtonCross = "rbxasset://BUTTON_CROSS_ASSET" -- Replace with the desired ButtonCross asset
   }
 
-  local mappedKey = userInputService:GetStringForKeyCode(key)
+  local mappedKey = UserInputService:GetStringForKeyCode(key)
   local image = mappings[mappedKey]
 
   imageLabel.Image = image
@@ -60,17 +62,17 @@ As your experience expands to more platforms, be sure to show button icons that 
 - `Class.UserInputService:GetImageForKeyCode()` returns Roblox default icons for the requested key code as easy drop-in replacements, like the following example for mapping `Enum.KeyCode.ButtonA` shows:
 
   ```lua title="Mapping Default Icons"
-  local userInputService = game.UserInputService
+  local UserInputService = game:GetService("UserInputService")
   local imageLabel = script.Parent
   local key = Enum.KeyCode.ButtonA
 
-  local mappedIcon = userInputService:GetImageForKeyCode(key)
+  local mappedIcon = UserInputService:GetImageForKeyCode(key)
   imageLabel.Image = mappedIcon
   ```
 
 ## Providing Haptic Feedback
 
-<img src="../../assets/console/haptic-feedback.png" width="60%" />
+<img src="../../assets/publishing/console/Haptic-Feedback.png" width="60%" />
 
 One unique advantage of controllers is the capability of providing haptic feedback by physically vibrating the controller to engage users' sense of touch. You can use `Class.HapticService` to enhance user immersion and provide useful feedback. Examples that can be more immersive with haptic feedback include:
 
@@ -82,14 +84,14 @@ One unique advantage of controllers is the capability of providing haptic feedba
 
 ## Building for the 10ft Experience
 
-<img src="../../assets/console/10-ft-experience.png" width="60%" />
+<img src="../../assets/publishing/console/10ft-Experience.png" width="60%" />
 
 When on consoles, users are typically sitting 10 feet away from the screen. A scale factor of 1.5x ensures that the UI is comfortable, easy to navigate, and with legible fonts.
 
 ### Considering TV Safe-Area
 
 <figure>
-  <img src="../../assets/console/tv-safe-area.png" width="60%" alt="An example illustration showing the dimensions of the TV-safe and unsafe zone."/>
+  <img src="../../assets/publishing/console/TV-Safe-Area.png" width="60%" alt="An example illustration showing the dimensions of the TV-safe and unsafe zone."/>
   <figcaption>The blue area represents the TV-unsafe zone.</figcaption>
 </figure>
 
@@ -109,7 +111,7 @@ Implement your UI using relative sizes and relative positions to measure everyth
 
 ## Adapting Progressive Disclosure
 
-<img src="../../assets/console/progressive-disclosure.png" width="100%" />
+<img src="../../assets/publishing/console/Progressive-Disclosure.png" width="100%" />
 
 Progressive disclosure defers advanced or rarely used features to a secondary screen. It's one of the best ways to declutter your UI and make it easy to use. For the console UX, it's common and faster to have the user go in and out of screens rather than fitting everything onto one screen like designing for desktops.
 

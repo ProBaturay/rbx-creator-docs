@@ -10,11 +10,6 @@ description: Explains how to publish the places in your experience.
 
 While an experience can consist of many places, each experience can only have one **starting place** that all users load into when they join. From within any place, you can [teleport](../../projects/teleporting.md) users to another place.
 
-<figure>
-  <img src="../../assets/studio/asset-manager/Starting-Place-Icon.png" width="360" />
-  <figcaption>Starting place marked by a "spawn" icon in the [Asset Manager](../../projects/assets/manager.md)</figcaption>
-</figure>
-
 ## Publishing a Starting Place
 
 By default, publishing a new place creates a new experience. New experiences begin as **private** and are only accessible to you and members of your [group](../../projects/groups.md) with the correct permissions. When appropriate, you can [release the experience](#releasing-to-the-public) to the public.
@@ -22,7 +17,7 @@ By default, publishing a new place creates a new experience. New experiences beg
 To publish a place as the starting place of an entirely new experience:
 
 1. In the Studio menu bar, select **File** &rarr; **Publish to Roblox**. A contextual menu displays.
-2. In the contextual menu, fill in the following fields, most of which you can update later in the [Game Settings](../../studio/game-settings.md) menu.
+2. Fill in the following fields, most of which can be changed later from [Game Settings](../../studio/game-settings.md).
 
    - **Name** / **Description** — The experience name and a description that describes what a potential player should expect. See [metadata best practices](#metadata-best-practices) for guidelines.
 
@@ -35,62 +30,55 @@ To publish a place as the starting place of an entirely new experience:
    - **Genre** — The genre that best describes the experience.
    - **Devices** — Each applicable device type that you want to support. The default options are practical for most new creators.
 
-      <img src="../../assets/publishing/experiences-places-assets/Supported-Devices.png" width="300" alt="Possible devices to support when publishing an experience: Computer, Phone, Tablet, Console, or VR" />
+   <img src="../../assets/publishing/experiences-places-assets/Supported-Devices.png" width="300" alt="Possible devices to support when publishing an experience: Computer, Phone, Tablet, Console, or VR" />
 
 3. Click the **Create** button.
 
-Once an experience is published, you can access the [Game Settings](../../studio/game-settings.md) menu, which contains Studio-level settings and customization options for [monetization](../../production/monetization/index.md), [character appearance](../../characters/appearance.md), and more.
+Once you publish your experience, you can [configure more settings](#configuring-experiences) and also add more places to your experience.
 
 ## Creating Additional Places
 
-After you have published a starting place to create the overall experience, you can add additional places through the [Asset Manager](../../projects/assets/manager.md).
+After you have [published a starting place](#publishing-a-starting-place) to create the overall experience, you can add additional places through the [Asset Manager](../../projects/assets/manager.md). To create a new place within an existing experience:
 
-To create a new place within an existing experience:
+1. From the [View](../../studio/view-tab.md) tab, open the [Asset Manager](../../projects/assets/manager.md).
 
-1. In the **View** tab, select the **Asset Manager** icon. The **Asset Manager** window displays.
+   <img src="../../assets/studio/general/View-Tab-Asset-Manager.png" width="776" alt="Asset Manager toggle button in Studio" />
 
-   <img src="../../assets/studio/general/View-Tab-Asset-Manager.png" width="876" alt="Asset Manager toggle button in Studio" />
+2. In its window, click the &#9776; icon in the upper-left and select **Places** from the menu.
 
-1. Navigate to the upper-left corner of the **Asset Manager** window, then click the &#9776; icon. A contextual menu displays.
-1. In the contexual menu, select **Places**. The starting place displays with a spawn icon.
+   <img src="../../assets/studio/asset-manager/Folder-Menu-Button.png" width="360" />
 
-   <img src="../../assets/studio/asset-manager/Folder-Menu-Button.png" width="360" /><br />
-   <img src="../../assets/publishing/experiences-places-assets/Places-Folder-Selected.png" width="360" />
+3. Avoiding the thumbnail/name of your starting place, right-click in an empty region of the window and select **Add New Place**. A new place displays with a placeholder name.
 
-1. Avoiding the thumbnail and name of your starting place, right-click in an empty region of the window. A contextual menu displays.
-1. From the contexutal menu, select **Add New Place**. A new place displays with a placeholder name of **[New Place]**.
+   <img src="../../assets/studio/asset-manager/Places-New-Place-Created.png" width="360" />
 
-   <img src="../../assets/publishing/experiences-places-assets/New-Place-Created.png" width="360" />
-
-1. Right-click the new place, select **Rename**, and enter a more descriptive name.
-1. When you double-click the new place, a new Studio session opens for editing the new place.
+4. Right-click the new place, select **Rename**, and enter a more descriptive name.
+5. When you double-click the new place, a new Studio session opens for editing the new place.
 
 ## Releasing to the Public
 
 New experiences begin as **private** and are only accessible to you and members of your group with the correct [permissions](../../projects/groups.md#roles-and-permissions). When appropriate, you can release an experience to the public as follows:
 
-1. Navigate to the [Creator Dashboard][1].
-1. If you published the experience under a group account, select the group in the left column.
+1. Navigate to the [Creator Dashboard](https://create.roblox.com/dashboard/creations).
+1. If you [published](#publishing-a-starting-place) the experience under a [group](../../projects/groups.md) account (recommended), select the group in the left column.
 
    <img src="../../assets/creator-dashboard/Creator-Selector-Group.png" width="800" />
 
-1. Hover over the right-hand corner of an experience's thumbnail, theb click the <span style={{fontWeight:"800"}}>&ctdot;</span> that appears. A contexutal menu displays.
-1. From the contextual menu, select **Make Public**.
+1. Click the **&ctdot;** in the corner of the experience's thumbnail and select **Make&nbsp;Public**.
 
-   <img src="../../assets/creator-dashboard/Experience-Menu-Make-Public.png" width="494" />
+   <img src="../../assets/creator-dashboard/Experience-Menu-Make-Public.png" width="420" />
 
-Your experience is now public. To ensure that it's available to the largest appropriate audience, ensure you also generate [Experience Guidelines](#experience-guidelines) for the experience.
+1. Explore how to provide [Experience Guidelines](#experience-guidelines) for the experience.
 
 ### Linking to Experiences
 
-After you make an experience public, you can copy its link from the [Creator Dashboard](https://create.roblox.com/dashboard/creations) and share it with others via social media or similar.
+Once an experience is [public](#releasing-to-the-public), you can copy its link from the [Creator Dashboard][creatordashboard] and share it with others via social media or similar.
 
-1. Hover over the right-hand corner of an experience's thumbnail, theb click the <span style={{fontWeight:"800"}}>&ctdot;</span> that appears. A contexutal menu displays.
-1. From the contextual menu, select **Copy URL**.
+1. Click the **&ctdot;** in the corner of the experience's thumbnail and select **Copy&nbsp;URL**.
 
-   <img src="../../assets/creator-dashboard/Experience-Menu-Copy-URL.png" width="494" />
+   <img src="../../assets/creator-dashboard/Experience-Menu-Copy-URL.png" width="420" />
 
-1. Share the URL with others. When they follow the link, they navigate to the experience's main page that features a button they can click to access the experience.
+2. Share the copied URL with others as a direct link to the experience's landing page featuring a **play** button.
 
    <img src="../../assets/misc/Experience-Page-Default.jpg" width="100%" />
 
@@ -98,7 +86,7 @@ You can also share an experience directly from the Roblox app:
 
 1. Open the Roblox app on your mobile device.
 1. Locate the experience, typically under the **Continue** header on the home screen, and tap its tile to open the info screen.
-1. In the lower-left corner of the screen, click the <span style={{fontWeight:"800"}}>&ctdot;</span> button and select **Share** to open your device's sharing options.
+1. In the lower-left corner of the screen, click the **&ctdot;** button and select **Share** to open your device's sharing options.
 
    <GridContainer numColumns="2">
      <img src="../../assets/misc/Experience-Info-Mobile-Menu-Button.jpg" />
@@ -114,7 +102,7 @@ Each Experience Guideline has two components:
 - **Age Recommendations** – Indicates which age group an experience is suitable for based on child development research and industry standards. For more information, see [Age Recommendations](https://en.help.roblox.com/hc/en-us/articles/8862768451604).
 - **Content Descriptors** – Indicates what type of content is within an experience, such as realistic depictions of blood or paid item trading.
 
-For instructions on how to generate Experience Guidelines, see [Experience Guidelines](../../production/promotion/experience-guidelines.md).
+Roblox strongly recommends that you fill out the guidelines questionnaire for each of your experiences so that they're available to the largest appropriate audience possible. Roblox does not recommend experiences without guidelines to users under 13 years old, and if your experience has no guidelines but contains [17+ content](https://en.help.roblox.com/hc/en-us/articles/15869919570708), it will be moderated. For more information, see [Experience Guidelines](../promotion/experience-guidelines.md).
 
 ### Allowing Copying
 
@@ -122,7 +110,7 @@ By default, all private and public experiences are locked so that you or your gr
 
 To allow users to download an editable copy of your experience:
 
-1. Navigate to the [Creator Dashboard][1].
+1. Navigate to the [Creator Dashboard][creatordashboard].
 1. Select the thumbnail of the experience you want to allow users to copy. The experience's **Overview** page displays.
 1. In the left-hand navigation, select **Places**. The **Places** page displays with place thumbnails for that specific experience.
 
@@ -145,12 +133,11 @@ To allow users to download an editable copy of your experience:
 
 Roblox automatically retains saved versions of each place for version control and backup purposes. If you need to revert to a previously saved version:
 
-1. In the **View** tab, select the **Asset Manager** icon. The **Asset Manager** window displays.
+1. From the [View](../../studio/view-tab.md) tab, open the [Asset Manager](../../projects/assets/manager.md).
 
-   <img src="../../assets/studio/general/View-Tab-Asset-Manager.png" width="876" alt="Asset Manager toggle button in Studio" />
+   <img src="../../assets/studio/general/View-Tab-Asset-Manager.png" width="776" alt="Asset Manager toggle button in Studio" />
 
-1. Navigate to the upper-left corner of the **Asset Manager** window, then click the &#9776; icon. A contextual menu displays.
-1. In the contexual menu, select **Places**. All of your place files display for this experience.
+1. In its window, click the &#9776; icon in the upper-left and select **Places** from the contextual menu.
 
    <img src="../../assets/studio/asset-manager/Folder-Menu-Button.png" width="360" />
 
@@ -179,8 +166,8 @@ Depending on the number of servers to replace, this process can take up to six m
 
 To restart all servers for updates:
 
-1. Navigate to the [Creator Dashboard][1].
-1. On your experience thumbnail, click **...** and **Restart Servers for Updates**.
+1. Navigate to the [Creator Dashboard][creatordashboard].
+1. Click the **&ctdot;** in the corner of the experience's thumbnail and select **Restart&nbsp;Servers&nbsp;for&nbsp;Updates**.
 
 ### Shutting Down All Servers
 
@@ -192,10 +179,41 @@ A comparable option is to make your experience private, which shuts down its ser
 
 To shut down all servers:
 
-1. Navigate to the [Creator Dashboard][1].
-1. On your experience thumbnail, click **...** and **Shut Down All Servers**.
+1. Navigate to the [Creator Dashboard](https://create.roblox.com/dashboard/creations).
+2. Click the **&ctdot;** in the corner of the experience's thumbnail and select **Shut&nbsp;Down&nbsp;All&nbsp;Servers**.
 
-Alternatively, select **File** > **Game Settings** > **Other** in Roblox Studio. Then click **Shutdown**.
+   <img src="../../assets/creator-dashboard/Experience-Menu-Shutdown-Servers.png" width="420" />
+
+3. Confirm shutdown by clicking the **OK** button.
+
+## Configuring Experiences
+
+You can customize your experience's settings from the [Creator Dashboard](https://create.roblox.com/dashboard/creations) or within Studio's [Game Settings](../../studio/game-settings.md). Some settings are only configurable within Studio while others are only configurable on the dashboard.
+
+### Creator Dashboard
+
+Most experience settings are configurable from the [Creator Dashboard](https://create.roblox.com/dashboard/creations), including [localization](../localization/index.md), access settings, [analytics](../analytics/index.md), and [monetization products](../monetization/index.md). You can also fill out the [Questionnaire](../promotion/experience-guidelines.md#questionnaire-categories) required for generating [experience guidelines](#experience-guidelines). To configure an experience:
+
+1. Select the experience you want to configure from your [list of creations](https://create.roblox.com/dashboard/creations) on the dashboard.
+2. Click on the category you wish to configure from the left-hand navigation.
+
+The **Communication Settings** category allows you to enable **strong language** if your experience is rated 17+. You can find this under the **Audience** section of the left-hand navigation. Enable the toggle to relax the text chat filter for some strong language in your experience. This also adds a tag above your experience page to warn other users that your experience may include strong language.
+
+<img src="../../assets/publishing/experiences-places-assets/Strong-Language-Pill.png" width="375" alt="Pill indicating the experience contains strong language" />
+
+Regardless of whether or not you activate the toggle, players do not face moderation consequences just for using strong language in chat or voice in 17+ games, but they cannot violate [Community Standards](https://en.help.roblox.com/hc/en-us/articles/203313410#safety) and [Terms of Use](https://www.roblox.com/info/terms). For example, players can type an expletive if they are scared by a monster, but they cannot abuse another player using strong language or otherwise.
+
+<Alert severity="warning">
+
+In-experience assets and experience metadata cannot contain strong language, even if the toggle is on and your experience is rated 17+. If you include strong language in your assets or experience page, your experience will be moderated.
+
+</Alert>
+
+### Game Settings
+
+Once an experience is published, the [Game Settings](../../studio/game-settings.md) window contains many Studio-level settings and customization options. To open it, click the **Game Settings** button in the [Home](../../studio/home-tab.md) tab of the ribbon menu.
+
+<img src="../../assets/studio/general/Home-Tab-Game-Settings.png" width="800" alt="Game Settings button indicated in Home tab" />
 
 ## Metadata Best Practices
 
@@ -277,4 +295,4 @@ Open your own <u>restaurant</u>, make delicious <u>food</u>, get lots of <u>cust
 Play our fun granny obby game. Obby obby obby obby obby obby obby adopt me bloxburg arsenal ninja legends parkour tycoon battle disaster survival super hero simulator run jump gun rpg pokemon wild west space alien piggy baldi granny murder mystery prison life jail break mario zelda dungeon quest.
 </Alert>
 
-[1]: https://create.roblox.com/dashboard/creations
+[creatordashboard]: https://create.roblox.com/dashboard/creations

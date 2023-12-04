@@ -13,10 +13,10 @@ You can toggle appearance of the **chat window** and **input bar** in one of two
 
    <Grid container spacing={3}>
    <Grid item>
-   <img src="../assets/ui/in-experience-text-chat/TextChatService-Configuration-Objects.png" width="320" />
+   <img src="../assets/players/in-experience-text-chat/TextChatService-Configuration-Objects.png" width="320" />
    </Grid>
    <Grid item>
-   <img src="../assets/ui/in-experience-text-chat/ChatWindowConfiguration-Enabled.png" width="400" /><br /><img src="../assets/ui/in-experience-text-chat/ChatInputBarConfiguration-Enabled.png" width="400" />
+   <img src="../assets/players/in-experience-text-chat/ChatWindowConfiguration-Enabled.png" width="400" /><br /><img src="../assets/players/in-experience-text-chat/ChatInputBarConfiguration-Enabled.png" width="400" />
    </Grid>
    </Grid>
 
@@ -35,6 +35,13 @@ You can toggle appearance of the **chat window** and **input bar** in one of two
   	chatInputBarConfiguration.Enabled = true
   end
   ```
+
+By default, when enabling both the chat window and the chat bar, the chat bar attaches to the chat window on the UI. You can obtain their read-only properties on their positions and sizes and use them to calculate the total size of the combination:
+
+- `Class.ChatWindowConfiguration.AbsolutePosition`
+- `Class.ChatWindowConfiguration.AbsoluteSize`
+- `Class.ChatInputBarConfiguration.AbsolutePosition`
+- `Class.ChatInputBarConfiguration.AbsoluteSize`
 
 ### Chat Window Customization
 
@@ -144,7 +151,7 @@ end
 
 <img
   alt="VIP users' chat tags"
-  src="../assets/ui/in-experience-text-chat/Chat-Tag-VIP.jpg"
+  src="../assets/players/in-experience-text-chat/Chat-Tag-VIP.jpg"
   width="90%" />
 
 ### Coloring Usernames
